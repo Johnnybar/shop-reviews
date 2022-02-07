@@ -1,0 +1,120 @@
+@import "scss-utils";
+
+li {
+  list-style-type: none;
+}
+
+//reviews
+.ts-reviews {
+  &__review-list li:nth-child(2n) {
+    background-color: $trusted-shops-blue;
+  }
+
+  &__review-list {
+    padding-left: 0;
+  }
+
+  &__select {
+    margin-left: toRem(20);
+  }
+
+  &__single-review {
+    padding: toRem(30);
+  }
+
+  &__single-review-field {
+    margin: toRem(20) 0 toRem(20) 0;
+  }
+
+  &__btn-wrapper {
+    margin: toRem(30) 0 toRem(30) 0;
+  }
+}
+
+//search
+.ts-search {
+  &__result-list {
+    padding-left: 0;
+  }
+
+  &__text-input {
+    max-height: toRem(38);
+  }
+
+  &__btn {
+    margin-right: toRem(20);
+    margin-bottom: toRem(20);
+  }
+
+  &__result-list li.ts-search-result__single-result:nth-child(2n) {
+    background-color: $trusted-shops-blue;
+  }
+}
+
+//search-result
+.ts-search-result {
+  &__result-review-list-item {
+    margin: toRem(20) 0 toRem(20) 0;
+  }
+
+  &__single-result {
+    padding: toRem(30);
+  }
+
+  &__single-result-name {
+    margin-bottom: toRem(20);
+  }
+
+  &__item {
+    margin: toRem(20) 0 toRem(20) 0;
+  }
+}
+
+//header
+.ts-header {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: toRem(110);
+  background: $trusted-shops-yellow;
+  display: flex;
+
+  &__heading {
+    margin-top: toRem(33);
+  }
+
+  &__logo {
+    margin: toRem(10);
+    max-width: toRem(200);
+    height: auto;
+  }
+}
+
+.ts-content-wrapper {
+  padding: toRem(150) 0 toRem(30) 0;
+  background-color: $trusted-shops-light-blue;
+  width: 100%;
+  min-height: 95vh;
+}
+
+//footer
+
+.ts-footer {
+  background-color: $trusted-shops-yellow;
+  &__text {
+    font-size: toRem(16);
+    font-weight: bold;
+    color: $trusted-shops-black;
+    margin: 0;
+    height: 5vh;
+  }
+}
+
+//Star Rating
+.full-star,
+.empty-star {
+  width: toRem(17);
+  height: toRem(16);
+  margin-right: toRem(2.5);
+}
