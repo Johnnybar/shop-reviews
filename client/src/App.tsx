@@ -24,7 +24,7 @@ const App = () => {
         </div>
         <footer className="ts-footer">
           <p className="ts-footer__text text-center">
-            Trusted Shops: We enable digital trust
+            Copyright © Jonathan Bareket 2019
           </p>
         </footer>
       </div>

@@ -69,6 +69,7 @@ const Search = () => {
       <div className="row">
         <div className="col-sm-4">
           <form
+            autoComplete="off"
             data-testid="form"
             className="form-inline"
             onSubmit={handleSubmission}
@@ -107,7 +108,7 @@ const Search = () => {
                 setPage(page - 1);
                 getAndSetSearchResults(searchTerm, page - 1);
               }}
-              className="btn btn-info ts-search__btn"
+              className="btn btn-outline-primary ts-search__btn"
             >
               Previous Page
             </button>
@@ -119,7 +120,7 @@ const Search = () => {
                 setPage(page + 1);
                 getAndSetSearchResults(searchTerm, page + 1);
               }}
-              className="btn btn-info ts-search__btn"
+              className="btn btn-outline-primary ts-search__btn"
               data-testid="increment"
             >
               Next Page
