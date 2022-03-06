@@ -6,7 +6,7 @@ const axios = require("axios");
 const app = express();
 
 // Serve the static files from client
-app.use(express.static(path.join(__dirname, "client/public")));
+app.use(express.static(path.join(__dirname, "client/build")));
 
 app.get("/api/getShopReviews", async (req, res) => {
   const uri = `https://api.trustedshops.com/rest/internal/v2/shops/${req.query.shopId}/reviews.json`;
