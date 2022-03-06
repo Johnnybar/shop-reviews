@@ -24,7 +24,7 @@ const App = () => {
         </div>
         <footer className="ts-footer">
           <p className="ts-footer__text text-center">
-            Copyright © Jonathan Bareket 2019
+            Copyright © Jonathan Bareket 2021
           </p>
         </footer>
       </div>
